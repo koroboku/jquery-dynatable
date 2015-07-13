@@ -825,11 +825,6 @@
     };
 
     this.init = function() {
-      window.onpopstate = function(event) {
-        if (event.state && event.state.dynatable) {
-          obj.state.pop(event);
-        }
-      }
     };
 
     this.push = function(data) {
